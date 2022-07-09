@@ -1,0 +1,177 @@
+/* BASE STYLE */
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --fa-border-radius: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* MOBILE FIRST LAYOUT */
+
+/* GENERAL STYLES */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.55rem;
+  color: #fff;
+  text-align: center;
+  background-color: #674aae; /*fallback */
+  background-color: var(--Violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 5% 10.6%;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+/* Headings */
+.big-heading {
+  font-size: 2.5rem;
+}
+
+/* Buttons */
+.reg-button {
+  font-size: 1.2rem;
+  color: #674aae; /*fallback */
+  color: var(--Violet);
+  background-color: #fff;
+  margin: 2.25rem 0;
+  height: 3.5rem;
+  width: 53.3%;
+  border: none;
+  border-radius: 10rem;
+  box-shadow: 0 0.5rem 0.3rem 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.reg-button:hover {
+  color: #fff;
+  background-color: #e882e8; /* fallback */
+  background-color: var(--Soft-Magenta);
+}
+
+/* Navigation Bar */
+.nav-brand {
+  width: 32%;
+}
+
+/* INTRODUCTORY SECTION */
+
+.intro-box {
+  padding: 7.5rem 0 6rem;
+}
+
+/* FOOTER SECTION */
+
+.social-media .fa-brands {
+  padding: 1rem 0.8rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.social-media .pad-sm {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.social-media .fa-brands:hover {
+  color: #e882e8; /* fallback */
+  color: var(--Soft-Magenta);
+  border-color: #e882e8; /* fallback */
+  border-color: var(--Soft-Magenta);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3d51a2; /* fallback */
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIUM LAYOUT (Tabs & iPad) */
+
+@media (min-width: 900px) {
+
+  /* GENERAL */
+
+  body {
+    text-align: left;
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    padding: 6rem 5.5% 4rem;
+  }
+
+  /* Buttons */
+  .reg-button {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 5.5rem;
+  }
+
+
+  /* INTRODUCTORY SECTION */
+
+  .intro-box {
+    display: flex;
+    padding: 10rem 0 2rem;
+  }
+
+  .illustration-image {
+    width: 55%;
+  }
+
+  .illustration-text {
+    width: 45%;
+    padding: 5rem 0 0 5rem;
+  }
+
+  /* FOOTER SECTION */
+
+  footer {
+    text-align: right;
+  }
+}
+
+/* Large Screen */
+
+@media (min-width: 1220px) {
+
+  /* General */
+  body {
+    font-size: 1.95rem;
+  }
+
+  /* Headings */
+  .big-heading {
+    font-size: 4.5rem;
+  }
+}
